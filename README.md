@@ -95,3 +95,35 @@ LeetCode第十三题:计算罗马数字的值
         return sum;
     }
 ```
+### Solution13
+LeetCode第十四题:字符串数组的最长前缀
+核心代码
+```
+public static String longestCommonPrefix(String[] strs) {
+        if (strs.length == 0 || strs == null) {
+            return "";
+        }
+
+        StringBuilder sb = new StringBuilder();
+
+        Arrays.sort(strs);
+        //最少比较的次数
+        int min = strs[0].length();
+        for (int i = 0; i < min; i++) {
+            Set<String> temp = new HashSet<>();
+            for (int j = 0; j < strs.length; j++) {
+                temp.add(String.valueOf(strs[j].charAt(i)));
+            }
+
+            if (temp.size() !=  1) {
+                break;
+            } else {
+               sb.append(temp.iterator().next());
+            }
+        }
+
+        return sb.toString();
+    }
+
+```
+时间复杂度为o(n * n)，感觉时间复杂度稍微有点高
