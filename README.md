@@ -17,7 +17,10 @@ LeetCode第九题:判断一个数是否为回文数
         return outputStack.equals(inputStack) ? true : false;
     }
 ```
-用集合也可以实现
+用集合也可以实现 . 
+=============================后续更新==================================
+将int转化为String，可以不使用栈这个数据结构
+
 ### Solution13
 LeetCode第十三题:计算罗马数字的值  
 核心代码
