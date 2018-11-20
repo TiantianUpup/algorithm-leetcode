@@ -1,6 +1,6 @@
 # algorithm-leetcode
 ### Solution9
-LeetCode第九题:判断一个数是否为回文数
+LeetCode第九题:判断一个数是否为回文数  
 核心代码
 ```
  public static boolean isPalindrome(int x) {
